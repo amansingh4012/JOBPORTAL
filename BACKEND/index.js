@@ -4,7 +4,9 @@ import cors from "cors";
 import dotenv from "dotenv";
  dotenv.config({});
 import connectToDB from "./utils/db.js";
-
+import userRoute from "./routes/userRoute.js";
+import companyRoute from "./routes/companyRoute.js"
+import jobRoute from "./routes/jobRoute.js";
 const app = express();
 
 connectToDB();
@@ -24,6 +26,12 @@ const corsOption = {
 }
 
 app.use(cors(corsOption));
+
+// apis
+app.use("/api/v1/user", userRoute)
+app.use("/api/v1/company", companyRoute)
+app.use("/api/v1/job", jobRoute)
+
 
 app.listen(PORT, ()=> {
     console.log(`SERVER is runing at http://localhost:${PORT}`)
