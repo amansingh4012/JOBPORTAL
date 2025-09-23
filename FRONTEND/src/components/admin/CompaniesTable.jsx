@@ -43,7 +43,7 @@ const CompaniesTable = () => {
                                 </TableCell>
                                 <TableCell>{company.name}</TableCell>
                                 <TableCell>{company.createdAt.split("T")[0]}</TableCell>
-                                <TableCell className="text-right cursor-pointer">
+                                <TableCell className="text-right cursor-pointer text-white">
                                     <Popover>
                                         <PopoverTrigger><MoreHorizontal /></PopoverTrigger>
                                         <PopoverContent className="w-32">

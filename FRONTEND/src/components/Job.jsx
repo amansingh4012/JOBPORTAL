@@ -20,11 +20,11 @@ const Job = ({job}) => {
         <div className='p-5 rounded-md shadow-xl bg-white border border-gray-100'>
             <div className='flex items-center justify-between'>
                 <p className='text-sm text-gray-500'>{daysAgoFunction(job?.createdAt) === 0 ? "Today" : `${daysAgoFunction(job?.createdAt)} days ago`}</p>
-                <Button variant="outline" className="rounded-full bg-amber-50" size="icon"><Bookmark /></Button>
+                <Button variant="outline" className="rounded-full bg-amber-50 text-white" size="icon"><Bookmark /></Button>
             </div>
 
             <div className='flex items-center gap-2 my-2'>
-                <Button className="p-6" variant="outline" size="icon">
+                <Button className="p-6 text-white" variant="outline" size="icon">
                     <Avatar>
                         <AvatarImage src={job?.company?.logo} />
                     </Avatar>
@@ -45,8 +45,8 @@ const Job = ({job}) => {
                 <Badge className={'text-[#7209b7] font-bold'} variant="ghost">{job?.salary}LPA</Badge>
             </div>
             <div className='flex items-center gap-4 mt-4'>
-                <Button  className="bg-[#7209b7]" onClick={()=> navigate(`/description/${job?._id}`)} >Details</Button>
-                <Button className="bg-[#7209b7]">Save For Later</Button>
+                <Button  className="text-white" onClick={()=> navigate(`/description/${job?._id}`)} >Details</Button>
+                <Button className="text-white">Save For Later</Button>
             </div>
         </div>
     )

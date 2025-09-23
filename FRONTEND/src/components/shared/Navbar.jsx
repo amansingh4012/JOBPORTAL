@@ -56,8 +56,8 @@ const Navbar = () => {
                     {
                         !user ? (
                             <div className='flex items-center gap-2'>
-                                <Link to="/login"><Button variant="outline">Login</Button></Link>
-                                <Link to="/signup"><Button className="bg-[#6A38C2] hover:bg-[#5b30a6]">Signup</Button></Link>
+                                <Link to="/login"><Button variant="outline" className="text-white">Login</Button></Link>
+                                <Link to="/signup"><Button className="bg-[#6A38C2] text-white hover:bg-[#5b30a6]">Signup</Button></Link>
                             </div>
                         ) : (
                             <Popover>
@@ -82,14 +82,14 @@ const Navbar = () => {
                                                 user && user.role === 'student' && (
                                                     <div className='flex w-fit items-center gap-2 cursor-pointer'>
                                                         <User2 />
-                                                        <Button variant="link"> <Link to="/profile">View Profile</Link></Button>
+                                                        <Button className="text-white" variant="link"> <Link to="/profile">View Profile</Link></Button>
                                                     </div>
                                                 )
                                             }
 
                                             <div className='flex w-fit items-center gap-2 cursor-pointer'>
                                                 <LogOut />
-                                                <Button onClick={logoutHandler} variant="link" class = "bg-white" >Logout</Button>
+                                                <Button onClick={logoutHandler} variant="link" class = "bg-white text-white" >Logout</Button>
                                             </div>
                                         </div>
                                     </div>
