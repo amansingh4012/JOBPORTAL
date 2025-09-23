@@ -1,0 +1,13 @@
+{
+  "name": "job-portal",
+  "version": "1.0.0",
+  "description": "A comprehensive full-stack job portal application that connects job seekers with employers.",
+  "main": "index.js",
+  "scripts": {
+    "install-deps": "npm install && cd BACKEND && npm install && cd ../FRONTEND && npm install",
+    "dev": "concurrently \"npm run dev --prefix BACKEND\" \"npm run dev --prefix FRONTEND\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
