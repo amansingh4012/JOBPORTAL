@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin: jobportal-frontend-five.vercel.app,
+    origin: jobportal-frontend-hdww7gugl-aman-kr-singhs-projects.vercel.app,
     credentials:true
 }
 
