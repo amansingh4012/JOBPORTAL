@@ -1,4 +1,4 @@
-# � Job Portal - Full Stack MERN Application
+# Job Portal - Full Stack MERN Application
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://jobportal-eosin-two.vercel.app)
 [![Backend API](https://img.shields.io/badge/Backend-API-blue)](https://jobportal-234t.onrender.com)
