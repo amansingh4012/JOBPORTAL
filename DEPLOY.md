@@ -336,10 +336,9 @@ If you encounter any issues during deployment:
 2. Review deployment logs
 3. Verify environment variables
 4. Test locally first
-5. Contact support if needed
 
 ---
 
 **Happy Deploying! 🚀**
 
-Made with ❤️ by [Aman Singh](https://github.com/amansingh4012)
+Made  by [Aman Singh](https://github.com/amansingh4012)
