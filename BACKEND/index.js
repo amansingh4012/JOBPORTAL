@@ -22,7 +22,7 @@ app.use(cookieParser());
 // }
 
 const corsOptions = {
-    origin: process.env.FRONTEND_URL,
+    origin: "https://jobportal-frontend-smoky.vercel.app",
     credentials: true
 }
 
